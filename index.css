@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+
+.container {
+	width: 100vw;
+	height: 100vh;
+	background-color: rgb(200, 103, 103);
+	display: flex;
+	overflow-x: hidden;
+}
+
+.side_bar {
+	background: bottom, no-repeat, url("./andy-holmes-LUpDjlJv4_c-unsplash.jpg");
+	width: 33vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.side_bar_imgContainer {
+	background: rgb(0, 0, 0);
+	opacity: 0.75;
+	width: 100%;
+	display: inherit;
+	justify-content: center;
+	align-items: center;
+}
+
+.side_bar_imgContainer > h1 {
+	font-family: "Lato", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	color: white;
+	font-size: 6rem;
+	text-transform: uppercase;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+}
+
+.side_bar_credit {
+	bottom: calc(100vw - 99vw);
+	position: absolute;
+	color: white;
+}
+
+.side_bar_imgContainer > .side_bar_img {
+	width: min(150px, 100%);
+	height: min(150px, 100%);
+	z-index: -1;
+}
+
+.right_side {
+	background-color: rgb(0, 0, 0);
+	width: calc(100vw - 33vw);
+}
+
+em {
+	font-style: italic;
+}
+
+.right_side_text {
+	padding: 48px;
+	color: white;
+}
+
+.right_side_text1 {
+	display: block;
+	font-size: 3.5rem;
+	line-height: 3.5rem;
+}
+
+.right_side_text1 > span {
+	display: block;
+}
+
+.right_side_text2 {
+	padding-top: 48px;
+	font-size: 4rem;
+}
+
+.right_side_formContainer {
+	display: flex;
+	flex-direction: column;
+	width: 77vw;
+	height: 42vh;
+	background-color: white;
+}
+
+.right_side_formContainer > h2 {
+	color: black;
+	height: 3.5rem;
+	padding: 24px 48px;
+	font-size: 3.5rem;
+	width: 100%;
+}
+
+.right_side_form {
+	display: flex;
+	flex-direction: column;
+}
+
+.right_side_controls {
+	padding-left: 48px;
+}
+
+.right_side_controls > label,
+input {
+	font-size: 4rem;
+}
