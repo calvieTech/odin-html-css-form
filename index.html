@@ -6,9 +6,9 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1.0" />
 		<title>Sign Up Form</title>
-		<link
+		<!-- <link
 			rel="stylesheet"
-			href="reset.css" />
+			href="reset.css" /> -->
 		<link
 			rel="stylesheet"
 			href="./index.css" />
@@ -38,13 +38,35 @@
 				<div class="right_side_formContainer">
 					<h2>Lets do this!</h2>
 					<div class="right_side_form">
-						<form action="">
-							<optgroup class="right_side_controls">
+						<form
+							action=""
+							class="right_side_controls">
+							<div class="right_side_controlsInput">
 								<label for="firstName">First Name</label>
 								<input
 									type="text"
 									id="firstName" />
-							</optgroup>
+							</div>
+							<div class="right_side_controlsInput">
+								<label for="lastName">Last Name</label>
+								<input
+									type="text"
+									id="lastName" />
+							</div>
+							<div class="right_side_controlsInput">
+								<label for="email">Email Address</label>
+								<input
+									type="text"
+									id="email" />
+							</div>
+							<div class="right_side_controlsInput">
+								<label for="phone">Phone Number</label>
+								<input
+									type="text"
+									id="phone" />
+							</div>
+
+							<button type="submit">Submit</button>
 						</form>
 					</div>
 				</div>
