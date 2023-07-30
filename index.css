@@ -10,11 +10,8 @@ body {
 .container {
 	margin: 0;
 	width: 100vw;
-	height: 100vh;
 	background-color: transparent;
-	display: flex;
 	overflow-x: hidden;
-	z-index: -2;
 }
 
 /** Left Side
@@ -41,30 +38,31 @@ body {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+	height: 220px;
+	margin-bottom: 49px;
 }
 
 .side_bar_imgContainer > h1 {
 	font-family: "Lato", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
 		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 	color: white;
-	font-size: 4rem;
+	font-size: 5.7rem;
 	text-transform: uppercase;
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	text-align: center;
+}
+
+.side_bar_imgContainer > .side_bar_img {
+	width: min(150px, 100%);
+	height: min(150px, 100%);
+	z-index: -1;
 }
 
 .side_bar_credit {
 	bottom: calc(100vw - 99.9vw);
 	position: absolute;
 	color: white;
-}
-
-.side_bar_imgContainer > .side_bar_img {
-	width: min(100px, 100%);
-	height: min(100px, 100%);
-	z-index: -1;
 }
 
 /** Right Side
@@ -76,9 +74,9 @@ body {
 	width: calc(100vw - 33vw);
 	height: 100vh;
 	position: relative;
-	display: block;
 	left: 33vw;
 	margin: 0px;
+	border: 2px solid salmon;
 }
 
 em {
@@ -86,57 +84,74 @@ em {
 }
 
 .right_side_text {
-	display: flex;
 	flex-flow: column nowrap;
-	justify-content: center;
-	border: 2px solid lightskyblue;
 	color: white;
-	display: flex;
-	padding-left: 21px;
-	font-size: 2rem;
+	margin-left: 28px;
+	font-size: 2.5rem;
 }
 
 .right_side_formContainer {
-	/* display: flex;
-	flex-flow: row wrap; */
-	gap: 24px;
-	padding-top: 24px;
-	padding-bottom: 24px;
+	display: flex;
 	width: 100%;
+	height: 600px;
 	background-color: white;
 	border: 2px solid rgb(224, 1, 153);
 }
 
-.right_side_formContainer > h2 {
+.right_side_form {
+	background-color: transparent;
+	display: inherit;
+	flex-direction: column;
+	/* align-items: center; */
+	height: 100%;
+	width: 100%;
+	margin: 0px 28px;
+}
+
+.right_side_form > h2 {
 	color: black;
-	font-size: 2.2rem;
-	display: inline-flex;
-	margin-top: 14px;
+	font-size: 2.6rem;
+	display: block;
 	margin-left: 21px;
-	margin-bottom: 14px;
 	width: 100%;
 }
 
-.right_side_form {
-	background-color: transparent;
-	height: 334px;
+.right_side_form > button {
+	/* margin-left: 21px; */
+	width: 150px;
 	display: flex;
-	flex-flow: row wrap;
-	padding: 20px 0px;
+	justify-content: center;
+	padding: 7px;
+	cursor: pointer;
+	margin-top: 14px;
+	margin-left: 21px;
+	font-size: 1.4rem;
 }
 
 .right_side_controls {
 	display: flex;
-	margin-left: 21px;
-	gap: 28px;
+	flex-flow: row wrap;
+	gap: 14px;
 	width: 100%;
+	align-items: flex-start;
+	margin: 21px 0px;
 }
 
 .right_side_controlsInput {
 	display: flex;
-	flex-flow: column wrap;
+	flex-direction: column;
+	margin: 7px 21px;
 	width: 40%;
+}
+.right_side_controlsInput > label {
+	font-size: 1.4rem;
 }
 
 .right_side_controlsInput > input {
+	padding: 10px 7px;
+	font-size: 1.4rem;
+}
+
+.right_side_controlsInput > input:focus {
+	border: 2px solid blue;
 }
